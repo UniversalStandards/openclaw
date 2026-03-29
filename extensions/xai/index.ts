@@ -143,6 +143,7 @@ export default defineSingleProviderPluginEntry({
         createCodeExecutionTool({
           config: ctx.config,
           runtimeConfig: ctx.runtimeConfig,
+          agentDir: ctx.agentDir,
         }),
       { name: "code_execution" },
     );
@@ -151,6 +152,7 @@ export default defineSingleProviderPluginEntry({
         createXSearchTool({
           config: ctx.config,
           runtimeConfig: ctx.runtimeConfig,
+          agentDir: ctx.agentDir,
         }),
       { name: "x_search" },
     );
